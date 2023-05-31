@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Webコンテンツデザイン各論９：JavaScript入門５（2/3:演習）</title>
+        <link rel="stylesheet" href="WCD.css">
+        <!-- Webフォント用 -->
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+      <span class="small"><div id="time">経過時間：0秒</div></span>
+
+        <header>
+          <h1>Webコンテンツデザイン各論９：JavaScript入門５（2/3:演習）</h1>
+          <p class="right">
+            講師：加藤 卓哉<br>
+            <progress value="0.33"></progress><br>
+            (33.3％ / 100％)
+          </p>
+        </header>
+
+        <section> <!-- 動画 -->
+          <p>
+            <a href="WCD1_JavaScript5-1.html">[前の項目へ]</a>
+          </p>
+          <h2>②演習</h2>
+
+          <p class="doc">
+            以下の項目を一つずつ読んで内容を理解してください．<br>
+            最後に練習問題に取り組んで次の内容に進みましょう．<br>
+          </p>
+        </section>
+
+        <nav>
+          <h2>本項目の目次</h2>
+          <ul>
+            <li><a href="#sec1">演習①初級</a>
+            <li><a href="#sec2">演習①上級</a>
+            <li><a href="#sec3">演習②</a>
+          </ul>
+          <ul>
+            <li><a href="#ex2">練習問題２</a>
+          </ul>
+        </nav>
+
+        <div class="anmt">
+          <section id="sec1"> <!-- sec1 -->
+            <div class="hidden_box">
+              <label for="label1">演習①初級<span class="small">（クリックして表示）</small></label>
+              <input type="checkbox" id="label1"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                <div class="slide"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    では，今日も演習問題に取り組んで，学習した内容を自身のスキルとして定着させましょう．<br>
+                    まずは初級からです．
+                  </div>
+                </div>
+                <p class="doc">
+                  ↑の吹き出しをクリックすると，音声が読み上げられます．（環境依存あり）
+                </p>
+
+                <div class="slide"><img src="slides/09-20.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    演習①初級です．<br>
+                    先ほどのメソッドの項目のDateオブジェクトの箇所で書いたサンプルプログラムを基に，より実用的な日数のカウントダウンに関するプログラムを書いてみましょう．<br><br>
+
+                    このようなプログラムが書ければ，「ワールドカップまであと〇〇日」のような表示ができるWebサイトを自身でデザインすることができますね．<br><br>
+
+                    順を追って取り組んでみてください．<br>
+                    必要に応じて，「2023年6月16日」の設定を変えてみて，きちんとその変更に応じて表示結果が変わるかどうかも確認してみてくださいね．<br><br>
+
+                    このプログラムが書けたら，次の演習①の上級にチャレンジしてみましょう．
+                  </div>
+                </div>
+                <!--ここまで-->
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="anmt">
+          <section id="sec2"> <!-- sec2 -->
+            <div class="hidden_box">
+              <label for="label2">演習①上級<span class="small">（クリックして表示）</small></label>
+              <input type="checkbox" id="label2"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                <div class="slide"><img src="slides/09-21.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    先ほどの初級では「あと何日」だけでしたが，今度は「あと何時間何分」かも表示できるようにしましょう．<br>
+                    できそうだったら「何秒」までつけていただいてもいいですよ．<br><br>
+
+                    あと何時間何分かというところで，単に引き算を行うとマイナスとなる場合が出てくるので，条件分岐でしっかりと対応できるようにしてくださいね．<br>
+                    それにより「日」，「時間」の繰り上げ繰り下げの処理が生じる部分もあります．<br>
+                    必要に応じて，「2023年6月16日23時55分」の設定を変えてみて，きちんとその変更に応じて表示結果が変わるかどうかも確認してみてくださいね．<br>
+                    結果が正しいかどうかもしっかりと確認するようにして，正しいという確信が持てた段階で次に進んでいきましょう．
+                  </div>
+                </div>
+                <!--ここまで-->
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="anmt">
+          <section id="sec3"> <!-- sec3 -->
+            <div class="hidden_box">
+              <label for="label3">演習②<span class="small">（クリックして表示）</small></label>
+              <input type="checkbox" id="label3"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                <div class="slide"><img src="slides/09-22.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    次の演習②はオブジェクトとメソッドの複合的なプログラミングが必要となる問題です．<br>
+                    まずはオブジェクトの定義から始め，発展課題のメソッドの作成まで順を追って進めていけるようにしてください．<br><br>
+
+                    この問題は，先週配列で取り組んでいただいたもののオブジェクト版となりますので，出力される結果も先週のものと同じとなることを意識して取り組んでみてください．
+                  </div>
+                </div>
+
+                <div class="slide"><img src="slides/09-23.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    演習②を実行した結果の画面の例です．
+                  </div>
+                </div>
+                <!--ここまで-->
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <div class="anmt">
+          <section id="ex2"> <!-- 練習問題 -->
+            <h2>練習問題２</h2>
+            <div class="doc">
+              次の章の学習に進むためには，練習問題に取り組み，正答する必要があります．<br>
+              わからない場合には，講義資料に戻って内容を理解するようにしてください．<br><br>
+
+              <div class="ex">
+                <u>問題：</u><br>
+                以下のプログラムを実行した結果のコンソールに出力される値について正しいものを選びなさい．<br><br>
+                var X = {<br>
+                &nbsp;&nbsp;color: 'red',<br>
+                &nbsp;&nbsp;value: 25,<br>
+                &nbsp;&nbsp;scores: [10,20,30,40,50]<br>
+                };<br>
+                console.log(X.value);
+                <br><br>
+
+              ※　できれば実際にプログラムを書くのではなく，頭の中で考えて答えを導いてみましょう．それくらいに理解しておいてほしいです．
+              </div>
+            </div>
+            <p class="doc">
+              １．<a href="#sec1" class="qanda">0</a><br>
+              ２．<a href="#sec1" class="qanda">10</a><br>
+              ３．<a href="#sec1" class="qanda">20</a><br>
+              ４．<a href="WCD1_JavaScript5-3.html" class="qanda" id="correct">25</a><br>
+              ５．<a href="#sec1" class="qanda">30</a><br>
+              ６．<a href="#sec1" class="qanda">40</a><br>
+              ７．<a href="#sec1" class="qanda">50</a><br>
+              ８．<a href="#sec1" class="qanda">red</a>
+            </p>
+          </section>
+        </div>
+
+        <footer>
+          c Faculty of Global Media Studies, Komazawa Univesity 2023.
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="WCD.js"></script>
+    </body>
+</html>

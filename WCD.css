@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+*{
+  /* font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif; */
+  /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+#time{
+  position: fixed;
+  right: 0;
+  margin: 3px 12px;
+  padding: 2px 7px;
+  background-color: white;
+  text-align: center;
+}
+
+header{
+  background-color: #ddfddd;
+}
+
+header>h1{
+  padding:5px 0px 0px 10px;
+  margin:0px;
+}
+
+progress[value] {
+  height: 10px;
+}
+
+header>.right{
+  /* headerの右下に表示するコンテンツ */
+  text-align: right;
+  padding:0px 10px 10px;
+  color: #1760a0;
+  margin:0px;
+}
+
+h2{
+  padding-left: 10px;
+}
+
+p{
+  /* 文章の行間設定 */
+  line-height: 1.7;
+  /* 文章の両端揃え   */
+  text-align: justify;
+}
+
+nav,section{
+  border-bottom: 5px solid #300;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.video{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.slide{
+  text-align: center;
+  margin: 20px;
+  padding-top: 20px;
+  border-top: dashed #DDD;
+}
+
+.doc{
+  margin-bottom: 30px;
+  margin-left: 120px;
+  margin-right: 40px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
+}
+
+.faceicon{
+  width: 80px;
+  flex: 0 50px 80px;
+  margin-left: 20px;
+}
+
+.faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #d7fedb;
+  border-radius: 50%;
+}
+
+.baloon{
+  margin: 15px 20px 0px 30px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #d7fedb;
+  flex-basis: auto;
+  max-width: 1150px;
+  align-content: flex-start;
+  cursor: pointer;
+}
+
+.baloon:before {
+  margin-right: -35px;
+  content: "";
+  display: inline-block;
+  position:relative;
+  top: 0px;
+  left: -45px;
+  border: 10px solid transparent;
+  border-right: 20px solid #d7fedb;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.important{
+  color:red;
+  font-weight: bold;
+}
+
+img{
+  border: 1px solid #300;
+  width: 70vw;
+}
+
+.small{
+  font-size: 0.6em;
+}
+
+.hidden_box {
+    margin: 2em 0;/*前後の余白*/
+    padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 15px;
+    margin-left: 5px;
+    font-weight: bold;
+    border: solid 2px #300;
+    cursor :pointer;
+    display: block;
+    width: 250px;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    margin-left: 15px;
+    height: auto;
+    opacity: 1;
+}
+
+.qanda:visited{
+  color:blue;
+}
+
+.ex{
+  color: darkred;
+  padding: 10px;
+  border: ridge;
+}
+
+.mid{
+  text-align: center;
+  
+}
+
+h2 .important{
+  border: ridge;
+  padding: 5px 10px;
+  margin: 30px;
+}
+
+footer{
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.7rem;
+  margin-top: 100px;
+}

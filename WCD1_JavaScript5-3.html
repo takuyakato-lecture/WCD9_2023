@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Webコンテンツデザイン各論９：JavaScript入門５（3/3:まとめ）</title>
+        <link rel="stylesheet" href="WCD.css">
+        <!-- Webフォント用 -->
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+      <span class="small"><div id="time">経過時間：0秒</div></span>
+        <header>
+          <h1>Webコンテンツデザイン各論９：JavaScript入門５（3/3:まとめ）</h1>
+          <p class="right">
+            講師：加藤 卓哉<br>
+            <progress value="0.67"></progress><br>
+            (66.7％ / 100％)
+          </p>
+        </header>
+
+        <section> <!-- 動画 -->
+          <p>
+            <a href="WCD1_JavaScript5-2.html">[前の項目へ]</a>
+          </p>
+          <h2>③まとめ</h2>
+
+          <p class="doc">
+            以下の項目を一つずつ読んで内容を理解してください．<br>
+            最後に練習問題に取り組んで次の内容に進みましょう．<br>
+          </p>
+        </section>
+
+        <nav>
+          <h2>本項目の目次</h2>
+          <ul>
+            <li><a href="#sec1">解答例</a>
+            <li><a href="#sec2">まとめ</a>
+          </ul>
+          <ul>
+            <li><a href="#ex3">練習問題３</a>
+          </ul>
+        </nav>
+
+        <div class="anmt">
+          <section id="sec1"> <!-- sec1 -->
+            <div class="hidden_box">
+              <label for="label1">解答例<span class="small">（クリックして表示）</small></label>
+              <input type="checkbox" id="label1"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                <br><br>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    演習問題の解答例を示します．<br>
+                    プログラミングにおいて答えはいつも一つではありません．<br>
+                    より効率的な書き方や，シンプルな書き方などもあるでしょう．アルゴリズムは一意には定まりませんので．<br>
+                    複雑なプログラムになってくればなってくるほど，解き方のバリエーションは増えていきます．<br><br>
+
+                    ここでは今回学習した書き方に即したわかりやすい解答例を示しておきます．<br>
+                    また，回答だけを見て理解したような気分になるのは危険ですので，必ず自分で練習問題を解いた後に確認するようにしてください．<br>
+                    ただ答えを見るのではなく，そこからしっかりと学び取れるように，プログラムの動きを辿りながら読み進めていってくださいね．
+                  </div>
+                </div>
+                <p class="doc">
+                  ↑の吹き出しをクリックすると，音声が読み上げられます．（環境依存あり）
+                </p>
+
+                <div class="slide"><img src="slides/09-24.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    まずは演習①初級ですね．<br><br>
+
+                    目標の日時をd2，現在の日時をdとしたとき，d2の「日」からdの「日」を引いたら目標までの日数が計算できますね．ただし，これは同じ月に実行した場合にしか当てはまりません．<br>
+                    例えば5月に取り組んだ場合にはif文が必要です．<br>
+                    例えば5月28日にプログラムを実行した場合，日の部分は28で，受講締切6/16の日の部分は16ですね．<br>
+                    この状態で16-28を計算すると-12になってしまいますので，5月末日である31日を足さないと正確な日数が計算できません．<br>
+                    なので，if文によって実行した日の月が6月であるかどうかを判定して，条件に応じた出力が行えるようにします．
+                  </div>
+                </div>
+
+                <div class="slide"><img src="slides/09-25.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    続いて演習①の上級です．<br>
+                    こちらも基本的には，d2の「日」とdの「日」の差を計算していくんですが，条件によってはマイナスになってしまいます．<br>
+                    マイナスになったら，適宜30日を加算したり，60分を加算したり，24時間を加算したり，といった状況に応じた処理をしなければいけません．<br><br>
+
+                    詳しく処理の流れを確認し，納得できたら次に進みましょう．<br>
+                    もしわからないところがあれば「質問・相談フォーラム」を通じて質問等をしてください．
+                  </div>
+                </div>
+
+                <div class="slide"><img src="slides/09-26.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    続いて演習②の解答例です．<br>
+                    こちらは人ごとにオブジェクトを作りますので，まず一人目，山田さんの分のオブジェクト「Yamada」を作成する場合について見ていきましょう．<br>
+                    nameプロパティ，scoreプロパティを用意して，値を設定します．<br>
+                    その後，発展課題のcalcAverageメソッドですね．<br>
+                    この中身はシンプルで，scoreプロパティの5つの値を足し合わせて，その個数である5で割るだけです．
+                  </div>
+                </div>
+
+                <div class="slide"><img src="slides/09-27.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    山田さんだけのオブジェクトでは全員分の処理はできませんので，続いて田中さんの分についても同様のオブジェクトを作成します．<br>
+                    ここはほとんどコピー＆ペーストで済みますね．<br>
+                    clacAverageメソッドに関してはそのまま同じ記述で大丈夫です．<br><br>
+
+                    これを５人分用意すればいいということですね．<br>
+                    ですが，同じような記述を繰り返し書くと冗長になる上に編集をするときに手間が多いから避けたいですよねr．<br>
+                    そういったときに「クラス」という概念を導入すると，一度の記述で異なるパターンのデータに同様の処理をすることができます．<br>
+                    クラスという概念については，プログラミング学習の中でも大きなハードルとして見られることが多く，あまり初心者向けではないので，この講義では扱わないこととしますが，もっとプログラミングをマスターしたい方は，是非勉強してみてください．
+                  </div>
+                </div>
+                <!--ここまで-->
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="anmt">
+          <section id="sec2"> <!-- sec2 -->
+            <div class="hidden_box">
+              <label for="label2">まとめ<span class="small">（演習ができたらクリックして表示）</small></label>
+              <input type="checkbox" id="label2"/>
+              <div class="hidden_show">
+                <!--非表示ここから-->
+                <div class="slide"><img src="slides/09-28.JPG"></div>
+                <div class="container">
+                  <div class="faceicon"><img src="icon.jpg"></div>
+                  <div class="baloon">
+                    まとめです．<br>
+                    本日はオブジェクトとメソッドの2つの項目を学びました．<br>
+                    この2つの項目は，今後のWebコンテンツデザインのプログラミングにおいて，必須の考え方となりますので，しっかりと理解しておいてください．<br><br>
+
+                    次回はいよいよJavaScript入門の最終回となります．
+                  </div>
+                </div>
+                <!--ここまで-->
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <br><br><br>
+
+
+        <div class="anmt">
+          <section id="ex3"> <!-- 練習問題 -->
+            <h2>練習問題３</h2>
+            <div class="doc">
+              次の章の学習に進むためには，練習問題に取り組み，正答する必要があります．<br>
+              わからない場合には，講義資料に戻って内容を理解するようにしてください．<br><br>
+
+              <div class="ex">
+                <u>問題：</u><br>
+                以下のプログラムを実行した結果の変数Xの値について正しいものを選びなさい．<br><br>
+                var d = new Date(2023,6,30,23,59,00);<br>
+                var X = d.getMonth();<br><br>
+
+              ※　できれば実際にプログラムを書くのではなく，頭の中で考えて答えを導いてみましょう．それくらいに理解しておいてほしいです．
+              </div>
+            </div>
+            <p class="doc">
+              １．<a href="#sec1" class="qanda">2023</a><br>
+              ２．<a href="#sec1" class="qanda">2023</a><br>
+              ３．<a href="#sec1" class="qanda">5</a><br>
+              ４．<a href="fin9.html" class="qanda" id="correct">6</a><br>
+              ５．<a href="#sec1" class="qanda">7</a><br>
+              ６．<a href="#sec1" class="qanda">8</a><br>
+              ７．<a href="#sec1" class="qanda">29</a><br>
+              ８．<a href="#sec1" class="qanda">30</a><br>
+              ９．<a href="#sec1" class="qanda">31</a><br>
+              １０．<a href="#sec1" class="qanda">23</a>
+            </p>
+          </section>
+        </div>
+
+        <footer>
+          c Faculty of Global Media Studies, Komazawa Univesity 2023.
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="WCD.js"></script>
+    </body>
+</html>
